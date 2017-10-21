@@ -1,0 +1,477 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body{
+	font: 400 16px/1.56 "Lato",Arial, sans-serif;
+	color:  #3c4955;
+}
+@font-face {
+	font-family: 'Big John';
+	src: url('../foliac/fonts/bigjohn-webfont.woff2') format('woff2'),
+	url('../foliac/fonts/bigjohn-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Slim Joe';
+	src: url('../foliac/fonts/slimjoe-webfont.woff2') format('woff2'),
+	url('../foliac/fonts/slimjoe-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/* Layout */
+*{
+	box-sizing: border-box;
+}
+
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1180px;
+	position:relative;
+	top:33px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+
+	border-radius: 3px;
+	border: 2px solid #48bf72;
+	line-height: 35px;
+	height: 39px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #48bf72;
+	font-size: 14px;
+	font-weight: 700;
+
+	/**/
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+body{
+	background: #ECECEC;
+	color: #FFF;
+	padding-right: 100px;
+}
+.ba-menu img{
+	position: relative;
+	left: 447px;
+	top: -25px;
+}
+.ba-intro{
+	padding: 36px 40px 180px;
+}
+.ba-logo{
+	float: left;
+	font-family: "Roboto";
+	color:  #303030;
+	font-size: 48px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	line-height: 27px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+/*.ba-logo img{
+	display: block;
+	background: #3c4955 url(../foliac/img/foliac-logo.png)50% no-repeat;
+	}*/
+	.ba-nav{
+		float: right;
+		padding-top: 11px;
+	}
+	.ba-menu{
+		padding: 0px 50px;
+		margin: 0;
+		list-style: none;
+	}
+
+	.ba-menu li{
+		display: inline-block;
+	}
+	/*.ba-menu li:before{
+		content: ' ';
+		height: 18px;
+		width: 1px;
+		background: rgba(255,255,255,.3);
+		display: inline-block;
+		margin: 0 56px;
+		transform: skew(-10deg);
+		}*/
+		.ba-menu li:not(:first-child):before{
+			content: ' ';
+			height: 18px;
+			width: 1px;
+			background: rgba(255,255,255,.3);
+			display: inline-block;
+			margin: 0 56px;
+			transform: skew(-10deg);/*для нахилу*/
+		}
+		.ba-menu a{
+			font-family: "Roboto";
+			color:  #303030;
+			font-size: 18px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 27px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			/*position: relative;
+			left: 245px;
+			top: -10px;*/
+			padding-top: 0px;
+		}
+		.ba_recent{
+			position: relative;
+			left: 232px;
+			top: -8px;
+		}
+
+		.burger{
+			height: 3px;
+			width: 20px;
+			background-color: #303030;
+			position: relative;
+			top: -31px;
+			left: 215px;
+			margin: 2px;
+		}
+		&:before,&:after{
+			content:'';
+			display: block;
+			position:absolute;
+			background-color: #303030;
+			left: 0px;
+			top: 8px;
+
+		}
+		&:after{
+			top: 13px;
+
+		}
+
+		.ba_featured{
+			position: relative;
+			left: 168px;
+			top: -8px;
+		}
+		.ba-menu a:hover{
+			color: #48bf72;
+		}
+		.ba-intro-body{
+			text-align: center;
+			padding: 135px;
+		}
+		.ba-intro-title{
+			font-size: 150px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 900;
+			line-height: 150px;/* Приближение из-за подстановки шрифтов */
+
+			color: #303030;
+			font-family: 'Raleway', sans-serif;
+			margin: -2px -74px 24px 23px;
+			padding-top: 100px;
+			padding-right: 135px;
+
+		}
+		.ba-container{
+			margin: 0 auto;
+		}
+		.ba-intro-subtitle{
+			font-family: "Roboto";
+			color:  #303030;
+			font-size: 24px;/* Приближение из-за подстановки шрифтов */
+			/*font-weight: 300px;*/
+			line-height: 36px;/* Приближение из-за подстановки шрифтов */
+			/*text-align: left;*/
+			margin: 0px 59px 0px 0px;
+			//padding-right: 120px;
+		}
+
+
+		.ba-logo a{
+			font-family: 'Roboto', sans-serif;
+		}
+		a{
+			text-decoration: none;
+		}
+		.ba-href{
+			font-family: 'Roboto', sans-serif;
+			color:  #e10011;
+			font-size: 24px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 700;
+			line-height: 36px;/* Приближение из-за подстановки шрифтов */
+			text-align: right;
+			margin: 535px;
+
+
+		}
+
+
+		.ba-block-content{
+			width: 60%;
+			float: left;
+			text-align: right;
+		}
+		.ba-block-img{
+			width: 40%;
+			float: left;
+			padding-top: 95px;
+			padding-left: 49px;
+
+			}//cк*/
+
+
+
+			.ba-btn-block{
+				clear: both;
+			}
+
+			label{
+				background: #000;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				display: inline-block;
+				cursor: pointer;
+				position: relative;
+			}
+
+			input[type="radio"]{
+				display: none;
+			}
+
+			input[type="radio"]:checked + label{
+				background: red;
+			}
+
+			.radio{
+				text-align: center;
+				width: 100%;
+				padding-right: 308px;
+				padding-top: 31px;
+			}
+
+			.ba-main{
+				background: #FFFFFF;
+				border-radius: 5px;
+				max-width: 1200px;
+				width: 100%;
+				margin: 125px 5px;
+			}
+			.tit_1{
+				font-family: "Raleway";
+				color:  #303030;
+				font-size: 48px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 900;
+				line-height: 150px;/* Приближение из-за подстановки шрифтов */
+				text-align: center;
+				padding-top: 57px;
+
+			}
+			.paragraf{
+				position: reletive;
+				top: 0;
+			}
+			.cont_1 p{
+				font-family: "Raleway";
+				color:  #303030;
+				font-size: 18px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+				line-height: 24px;/* Приближение из-за подстановки шрифтов */
+				text-align: center;
+				margin: -52px 0px -1px 29px;
+			}
+			.ba-main p{
+
+			padding-top: 0px;
+				background: url(../img/underline.png) no-repeat 50% 0%;
+			}
+
+			.ba-row{
+				padding: 2% 2% 2% 2%;
+				float: left;
+				width: 100%;
+				background: #FFF;
+			}
+			.ba-img{
+				float: left;
+				width: calc(100% / 3);
+				padding: 10px;
+				position: relative;
+			}
+			.ba-img a{
+				display: block;
+			}
+			.ba-img img{
+				width: 100%;
+				display: block;
+			}
+			.ba-img-1{
+				width: 68%;
+			}
+			.ba-img-2{
+				float: left;
+				width: 32%;
+			}
+
+			.ba-work{
+				position: relative;
+				overflow: hidden;
+			}
+			.ba-work:before{
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				background-color: red;
+				visibility: hidden;
+				opacity: 0;
+
+				-webkit-transition: all .25s;
+				-o-transition: all .25s;
+				transition: all .25s;
+			}
+
+			.ba-work:hover:before{
+				visibility: visible;
+				opacity: 1;
+				border-radius: 5px;
+
+			}
+			.ba-work .caption{
+				position: absolute;
+				bottom: -355px;
+				left: 0;right: 0;
+				color: #fff;
+				-webkit-transition: all .25s;
+				-o-transition: all .25s;
+				transition: all .25s;
+			}
+			.ba-work:hover .caption{
+				bottom: 0px;
+				font-family: "Roboto";
+				color:  #ffffff;
+				font-size: 30px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 900;
+				text-align: left;
+				padding: 370px 70px 60px 40px;
+
+			}
+			.line{
+				background-color:  #ffffff;
+				width: 92px;
+				height: 5px;
+				margin-top: 30px;
+			}
+			/*.ba-work:hover:after .line{
+
+				display: block;
+				width:55px;
+				height:5px;
+
+				background-color: white;
+
+
+			}*/
+
+
+
+	//краща спроба
+
+	.ba-footer h2{
+		text-align: center;
+		color:  black;
+		margin-bottom: 0px;
+
+	}
+	.ba-form{
+		margin: 0 auto;
+		left: 450px;
+		position: relative;
+		bottom: 0px;
+
+	}
+	.ba_section{
+		float: left;
+		width: 100%;
+		padding: 0px 0px 50px 350px;
+		font-family: Raleway;
+		color:  #303030;
+	}
+	.ba_section h2{
+		font-size: 48px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 900;
+		line-height: 150px;/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		padding-bottom: 0px;
+	}
+
+	.ba_section p{
+		font-size: 18px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		line-height: 24px;/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		padding-right: 216px;
+	}
+	.ba_section h2{
+		position: relative;
+		bottom: -54px;
+		left: -118px;
+
+	}
+	.ba_section form{
+		position: relative;
+		left: -100px;
+	}
+
+	.main {    position: relative;
+		top: 22px;
+
+	}
+.ba-main{
+	margin: 0 auto;
+	    margin-left: 17px;
+	    padding-top: 22px;
+}
+
+
+
+
